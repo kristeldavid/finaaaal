@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kristel | IT Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f45d9e, #df95b9);
+    color: #333;
+    animation: fadeIn 1s ease-in;
+    transition: all 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);} 
+    to {opacity: 1; transform: translateY(0);} 
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: rgb(243, 155, 179);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 5px solid #ff69b4;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+h1 {
+    margin: 0;
+    color: #c2185b;
+}
+
+h2 {
+    color: #ad1457;
+    border-bottom: 2px solid #ffc1e3;
+    padding-bottom: 5px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #f8bbd0;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #fff0f5;
+    padding-left: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    padding: 8px 14px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: 0.3s;
+    font-size: 14px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+a:active::after {
+    width: 200px;
+    height: 200px;
+}
+
+a:hover {
+    background: linear-gradient(45deg, #ff1493, #c2185b);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+}
+
+a:active {
+    transform: scale(0.95) rotate(-1deg);
+}
+
+.footer {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #ad1457;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    color: #ff1493;
+    transform: scale(1.3) rotate(10deg);
+}
+
+.highlight {
+    background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {box-shadow: 0 0 10px #ff69b4;}
+    to {box-shadow: 0 0 20px #ff1493;}
+}
+
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="card profile-header">
+    <img src="picmu.jpeg" class="profile-img">
+    <div>
+        <h1>Kristel G. David</h1>
+        <p><i class="fas fa-map-marker-alt"></i> Magalang Pampanga, Philippines</p>
+        <p><i class="fas fa-graduation-cap"></i> BS Information Technology</p>
+        <p><strong>davidkristelguinto@gmail.com</strong></p>
+    </div>
+</header>
+
+<div class="card highlight">
+    "A passionate IT student committed to continuous learning, innovation, and using technology to create meaningful solutions."
+</div>
+
+<div class="main-grid">
+    <section class="card">
+        <h2>Education</h2>
+        <ul>
+            <li>College: Bachelor of Science in Information Technology - PSAU</li>
+            <li>Senior High: Magalang Christian Ecumenical School, INC.</li>
+            <li>High School: Angeles City National Trade School</li>
+            <li>Elementary: Sta Teresita Elementary School</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Core Values</h2>
+        <ul>
+            <li>✔ Innovation and Creativity</li>
+            <li>✔ Continuous Improvement</li>
+            <li>✔ Ethical Use of Technology</li>
+        </ul>
+    </section>
+</div>
+
+<div class="main-grid">
+
+<section class="card">
+    <h2>My Projects</h2>
+    <ul>
+        <li><a href="resume index.html">Task 1: Resume</a></li>
+        <li><a href="nested index.html">Task 2: Nested List</a></li>
+        <li><a href="image index.html">Task 3: Image Maps</a></li>
+        <li><a href="forms index.html">Task 4: Forms</a></li>
+        <li><a href="css index.html">Task 5: CSS</a></li>
+        <li><a href="display index.html">Task 6: Display</a></li>
+        <li><a href="website index.html">Task 7: Website</a></li>
+    </ul>
+</section>
+
+<section class="card">
+    <h2>Final Projects</h2>
+    <ul>
+        <li>✔ CSS Position Project</li>
+        <li style="color:gray;">⏳ More Coming Soon</li>
+    </ul>
+</section>
+
+</div>
+
+<footer class="card footer">
+    <h2>Connect With Me</h2>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2026 Kristel David | Portfolio</p>
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const target = this.getAttribute("href");
+
+        if (target && !target.startsWith("#") && !this.hasAttribute("target")) {
+            e.preventDefault();
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 400);
+        }
+    });
+});
+</script>
+
+</body>
+</html>
